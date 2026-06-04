@@ -1,4 +1,4 @@
-name: Run python program
+name: Run python job
 on: 
     push:
         branches:
@@ -8,8 +8,8 @@ jobs:
     Ci-pipeline:
         runs-on: ubuntu-latest
         steps:
-            -name:Checkout code
+            -name: Checkout code
              uses: actions/checkout@v2
 
-            -name:print welcome meassage
-             run: echo "Welcome to git hub actions"
+            -name: Print Message
+             run: echo 'Welcome to AVD'
