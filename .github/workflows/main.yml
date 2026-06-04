@@ -2,14 +2,14 @@ name: Run python job
 on: 
     push:
         branches:
-            - main
+        - main
 
 jobs:
-    Ci-pipeline:
+    ci-pipeline:
         runs-on: ubuntu-latest
         steps:
-            -name: Checkout code
-             uses: actions/checkout@v2
+        -name: Checkout Code
+         uses: actions/checkout@v2
 
-            -name: Print Message
-             run: echo 'Welcome to AVD'
+        -name: Print Message
+         run: echo 'Welcome to AVD'
