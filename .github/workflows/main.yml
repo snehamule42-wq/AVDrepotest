@@ -8,8 +8,7 @@ jobs:
     ci-pipeline:
         runs-on: ubuntu-latest
         steps:
-        -name: Checkout Code
-         uses: actions/checkout@v2
-
-        -name: Print Message
-         run: echo 'Welcome to AVD'
+         -name: Checkout Code
+          uses: actions/checkout@v4
+         -name: Print Message
+          run: echo 'Welcome to AVD'
